@@ -1,0 +1,4 @@
+# se utiliza para indicar a los robots de los buscadores que no indexen ciertas páginas en weeb scraping
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
