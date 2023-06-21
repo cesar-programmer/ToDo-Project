@@ -54,6 +54,7 @@ function ModalTodo() {
           <ModalBody>
             <form>
               <Input
+                required
                 errorBorderColor="red.300"
                 placeholder="Hacer la tarea"
                 size="lg"
