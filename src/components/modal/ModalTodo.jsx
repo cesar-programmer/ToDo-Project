@@ -25,6 +25,10 @@ function ModalTodo() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (Text.trim() === '') {
+    // Verificar si el texto está vacío o solo contiene espacios en blanco
+      return; // No hacer nada si el texto está vacío
+    }
     addTodo(Text);
     setText('');
     onClose();
@@ -54,7 +58,6 @@ function ModalTodo() {
           <ModalBody>
             <form>
               <Input
-                required
                 errorBorderColor="red.300"
                 placeholder="Hacer la tarea"
                 size="lg"
